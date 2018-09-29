@@ -1,8 +1,8 @@
-# hello_cpp
-A simple C++ example with Cygwin64 g++/gdb Visual Studio Code integration.
+# boost_sharedmem
+A simple BOOST C++ memory sharing example with Visual Studio Code Integration
 
 ### Source code
-https://github.com/louipr/hello_cpp
+https://github.com/louipr/boost_sharedmem
 
 
 ### Project Dependencies 

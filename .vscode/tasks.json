@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "${fileDirname}/out.exe"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-o",
+                "${fileDirname}/out.exe",
+                "${fileDirname}/*.cpp"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command":"${fileDirname}/out.exe",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build & Run",
+            "command":"${fileDirname}/out.exe",
+            "dependsOn": [
+                "Clean",
+                "Build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
