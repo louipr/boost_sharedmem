@@ -7,6 +7,7 @@ https://github.com/louipr/boost_sharedmem
 
 ### Project Dependencies 
 * cygwin64
+* boost/interprocess (cygwin64)
 
 
 ### Dummy Title

@@ -17,10 +17,12 @@
             "type": "shell",
             "command": "g++",
             "args": [
+                "-fpermissive",
                 "-g",
                 "-o",
                 "${fileDirname}/out.exe",
-                "${fileDirname}/*.cpp"
+                "${fileDirname}/*.cpp",
+                "${workspaceFolder}/lib/*.cpp" // for shared *.cpp objects
             ],
             "problemMatcher": []
         },
